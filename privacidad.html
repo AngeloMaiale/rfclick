@@ -33,7 +33,7 @@
     </table></div>
 
     <h2>Comunicación con nuestro servidor (solo usuarios Pro)</h2>
-    <p>Al activar Pro y luego una vez por semana, la extensión envía a nuestro servidor de licencias (alojado en Supabase) <strong>únicamente</strong> la clave de licencia y un identificador aleatorio de la instalación, que no está ligado a tu identidad ni a tu equipo. El servidor guarda una huella criptográfica (hash) de la clave, el plan, el estado y la lista de instalaciones activadas, para aplicar el límite de navegadores de tu plan. Con el proveedor de pagos se verifica que la clave sea válida.</p>
+    <p>Al activar Pro y luego una vez por semana, la extensión envía a nuestro servidor de licencias (alojado en Supabase) <strong>únicamente</strong> la clave de licencia y un identificador aleatorio de la instalación, que no está ligado a tu identidad ni a tu equipo. El servidor guarda una huella criptográfica (hash) de la clave, el plan, el estado y la lista de instalaciones activadas, para aplicar el límite de navegadores de tu plan. Con el proveedor de pagos se verifica que la clave sea válida. Para frenar abusos (por ejemplo, alguien probando claves en masa), el servidor cuenta las peticiones por dirección IP durante unos minutos: guarda solo una huella criptográfica (hash) de la IP, nunca la IP en claro, y borra los contadores viejos periódicamente.</p>
 
     <h2>Pagos</h2>
     <p>Los pagos los procesa Lemon Squeezy, que actúa como vendedor registrado (<em>merchant of record</em>). Ellos reciben tus datos de pago y de facturación según su propia política de privacidad; nosotros no vemos tu tarjeta. Recibimos de ellos tu correo y el número de orden para gestionar la licencia y los reembolsos.</p>
@@ -59,7 +59,7 @@
       <ul>
         <li><strong>Tax profiles</strong> (RFC, legal name, postal code, tax regime, CFDI use, email) are stored locally and only written into the form in the tab where you click "Fill".</li>
         <li><strong>Imported Constancia PDFs</strong> are read in memory and discarded; they are never uploaded.</li>
-        <li><strong>Pro users only:</strong> when activating Pro and then weekly, the extension sends the license key and a random installation ID to our license server (hosted on Supabase). We store a hash of the key, the plan, its status and the activated installations to enforce your plan's browser limit.</li>
+        <li><strong>Pro users only:</strong> when activating Pro and then weekly, the extension sends the license key and a random installation ID to our license server (hosted on Supabase). We store a hash of the key, the plan, its status and the activated installations to enforce your plan's browser limit. To prevent abuse, the server counts requests per IP address for a few minutes, storing only a hash of the IP (never the IP itself) and periodically deleting old counters.</li>
         <li><strong>Payments</strong> are processed by Lemon Squeezy as merchant of record under their own privacy policy. We receive your email and order number to manage the license and refunds.</li>
         <li><strong>"Copy diagnostics"</strong> copies the form's structure, without typed values, to your clipboard. It only reaches us if you choose to send it.</li>
         <li>The extension only accesses a page when you click the button or press the shortcut. For forms inside a frame from another site, it asks for explicit permission for that site only.</li>
