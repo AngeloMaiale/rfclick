@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · RFClick</title>
+  <meta name="description" content="Qué datos maneja RFClick y dónde quedan. Tus datos fiscales se guardan solo en tu navegador.">
+  <link rel="icon" href="img/favicon-32.png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="./"><img src="img/icono.svg" alt="">RFClick</a>
+      <nav><a href="./">Inicio</a><a href="#en">English</a></nav>
+    </div>
+  </header>
+
+  <main class="contenedor legal">
+    <h1>Política de privacidad</h1>
+    <p><strong>Última actualización:</strong> 2 de noviembre de 2026 · <strong>Responsable:</strong> [nombre o razón social del vendedor] · <strong>Contacto:</strong> <a href="mailto:soporte.rfclick@gmail.com">soporte.rfclick@gmail.com</a></p>
+
+    <p class="resumen">RFClick guarda tus datos fiscales <strong>solo en tu navegador</strong>. No los enviamos a ningún servidor, no usamos analítica ni publicidad y no vendemos datos.</p>
+
+    <h2>Qué datos maneja la extensión y dónde quedan</h2>
+    <div class="tabla"><table>
+      <tr><th>Dato</th><th>Dónde se guarda</th><th>¿Sale de tu navegador?</th></tr>
+      <tr><td>Perfiles fiscales: RFC, nombre o razón social, código postal, régimen fiscal, uso del CFDI, correo</td><td>Almacenamiento local de la extensión en tu dispositivo</td><td><strong>No.</strong> Solo se escriben en el formulario de la pestaña en la que pulsas "Rellenar".</td></tr>
+      <tr><td>Constancia de Situación Fiscal (PDF) que importes</td><td>Se lee en memoria y se descarta</td><td><strong>No.</strong> El archivo no se sube a ningún lado.</td></tr>
+      <tr><td>Contador de formularios rellenados y fecha de instalación</td><td>Local</td><td>No</td></tr>
+      <tr><td>Clave de licencia Pro (si compras Pro)</td><td>Local y en el almacenamiento sincronizado de tu navegador</td><td>Sí, a nuestro servidor de licencias</td></tr>
+      <tr><td>Identificador aleatorio de instalación</td><td>Local</td><td>Sí, junto con la clave de licencia</td></tr>
+    </table></div>
+
+    <h2>Comunicación con nuestro servidor (solo usuarios Pro)</h2>
+    <p>Al activar Pro y luego una vez por semana, la extensión envía a nuestro servidor de licencias (alojado en Supabase) <strong>únicamente</strong> la clave de licencia y un identificador aleatorio de la instalación, que no está ligado a tu identidad ni a tu equipo. El servidor guarda una huella criptográfica (hash) de la clave, el plan, el estado y la lista de instalaciones activadas, para aplicar el límite de navegadores de tu plan. Con el proveedor de pagos se verifica que la clave sea válida.</p>
+
+    <h2>Pagos</h2>
+    <p>Los pagos los procesa Lemon Squeezy, que actúa como vendedor registrado (<em>merchant of record</em>). Ellos reciben tus datos de pago y de facturación según su propia política de privacidad; nosotros no vemos tu tarjeta. Recibimos de ellos tu correo y el número de orden para gestionar la licencia y los reembolsos.</p>
+
+    <h2>Diagnóstico de formularios</h2>
+    <p>Si un portal no se rellena bien, puedes pulsar "Copiar diagnóstico". Eso copia <strong>a tu portapapeles</strong> la estructura del formulario (etiquetas y opciones), sin los valores escritos. Solo nos llega si tú decides pegarlo en un mensaje a soporte. Revísalo antes de enviarlo: puede incluir textos visibles de la página.</p>
+
+    <h2>Permisos del navegador</h2>
+    <p>La extensión solo accede a una página cuando tú pulsas el botón o el atajo de teclado. Si el formulario está dentro de un marco de otro sitio, te pedirá permiso explícito para ese sitio concreto.</p>
+
+    <h2>Tus derechos</h2>
+    <p>Puedes borrar todos tus datos locales eliminando tus perfiles o desinstalando la extensión. Para pedir el acceso, la corrección o la eliminación de los datos de licencia que guardamos, escribe a <a href="mailto:soporte.rfclick@gmail.com">soporte.rfclick@gmail.com</a>.</p>
+
+    <h2>Cambios</h2>
+    <p>Publicaremos cualquier cambio en esta página con su fecha de actualización.</p>
+
+    <hr>
+
+    <h1 id="en" lang="en">Privacy policy</h1>
+    <div lang="en">
+      <p><strong>Last updated:</strong> November 2, 2026 · <strong>Controller:</strong> [seller name] · <strong>Contact:</strong> <a href="mailto:soporte.rfclick@gmail.com">soporte.rfclick@gmail.com</a></p>
+      <p class="resumen">RFClick stores your tax details <strong>only in your browser</strong>. They are never sent to our servers. We use no analytics or advertising and we do not sell data.</p>
+      <ul>
+        <li><strong>Tax profiles</strong> (RFC, legal name, postal code, tax regime, CFDI use, email) are stored locally and only written into the form in the tab where you click "Fill".</li>
+        <li><strong>Imported Constancia PDFs</strong> are read in memory and discarded; they are never uploaded.</li>
+        <li><strong>Pro users only:</strong> when activating Pro and then weekly, the extension sends the license key and a random installation ID to our license server (hosted on Supabase). We store a hash of the key, the plan, its status and the activated installations to enforce your plan's browser limit.</li>
+        <li><strong>Payments</strong> are processed by Lemon Squeezy as merchant of record under their own privacy policy. We receive your email and order number to manage the license and refunds.</li>
+        <li><strong>"Copy diagnostics"</strong> copies the form's structure, without typed values, to your clipboard. It only reaches us if you choose to send it.</li>
+        <li>The extension only accesses a page when you click the button or press the shortcut. For forms inside a frame from another site, it asks for explicit permission for that site only.</li>
+        <li>You can delete all local data by deleting your profiles or uninstalling the extension. To access, correct or delete license data, contact <a href="mailto:soporte.rfclick@gmail.com">soporte.rfclick@gmail.com</a>.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <span>RFClick no está afiliado al SAT ni a ninguna autoridad o comercio.</span>
+      <span><a href="./">Inicio</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Ícono de RFClick: una "R" sobre verde y un cursor que hace clic. -->
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#fondo)"/>
+  <!-- R -->
+  <path d="M30 98 V30 h28 c15 0 25 9 25 22 c0 10 -6 17 -15 20 l17 26 h-17 l-15 -24 h-9 v24 z M44 62 h13 c7 0 11 -4 11 -10 s-4 -10 -11 -10 h-13 z" fill="#fff"/>
+  <!-- cursor -->
+  <g transform="translate(72 64)">
+    <path d="M0 0 L0 40 L10 31 L17 46 L25 42 L18 28 L31 28 Z" fill="#fff" stroke="#047857" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <!-- destellos del clic -->
+  <g stroke="#d1fae5" stroke-width="5" stroke-linecap="round">
+    <line x1="100" y1="54" x2="108" y2="46"/>
+    <line x1="88" y1="50" x2="88" y2="40"/>
+    <line x1="104" y1="68" x2="114" y2="68"/>
+  </g>
+</svg>
