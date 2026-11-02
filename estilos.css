@@ -62,3 +62,13 @@ footer .contenedor { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-con
 .legal th, .legal td { text-align: left; border-bottom: 1px solid var(--borde); padding: 8px 6px; vertical-align: top; }
 .legal .tabla { overflow-x: auto; }
 .resumen { background: var(--verde-claro); border-radius: 12px; padding: 14px 18px; }
+
+.guia h2 { margin-top: 32px; }
+.guia code { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 6px; padding: 1px 6px; font-size: 0.92em; word-break: break-all; }
+.cta { background: var(--verde-claro); border-radius: 16px; padding: 20px 22px; margin: 32px 0; }
+.cta h2 { margin-top: 0; }
+.lista-guias a { font-weight: 600; text-decoration: none; }
+@media (max-width: 480px) {
+  nav a { margin-left: 12px; font-size: 14px; }
+  nav a[href="#como"] { display: none; }
+}
